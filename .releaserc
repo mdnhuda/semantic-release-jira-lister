@@ -3,7 +3,14 @@
     "repositoryUrl": "https://github.com/mdnhuda/semantic-release-jira-lister.git",
     "tagFormat": "release/${version}",
     "plugins": [
-        "semantic-release-jira-lister"
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        ["@semantic-release/changelog", {
+          "changelogFile": "docs/CHANGELOG.md",
+        }],
+        ["@semantic-release/github", {
+          "assets": ["docs/CHANGELOG.md"],
+        }]
     ],
 
 }

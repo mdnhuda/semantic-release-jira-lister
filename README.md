@@ -30,8 +30,6 @@ $ npm install semantic-release-jira-lister -D
 
 ## Usage
 
-The plugin can be configured in the [**semantic-release** configuration file](https://github.com/semantic-release/semantic-release/blob/caribou/docs/usage/configuration.md#configuration):
-
 ```json
 {
   "plugins": [

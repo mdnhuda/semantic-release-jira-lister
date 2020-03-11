@@ -26,5 +26,5 @@ test.serial('Create new jira-list file', async t => {
   await t.context.m.prepare({}, {cwd, commits, logger: t.context.logger});
 
   // Verify the content of the CHANGELOG.md
-  t.is((await readFile(jiraListFilePath)).toString(), `"TEST-1","TEST-2"`);
+  t.is((await readFile(jiraListFilePath)).toString(), `TEST-1,TEST-2`);
 });

@@ -25,5 +25,5 @@ test('Create new jira-list file', async t => {
   await prepare({}, {cwd, commits, logger: t.context.logger});
 
   // Verify the content of the file created, only unique jira IDs will be kept
-  t.is((await readFile(jiraListFilePath)).toString(), `"TEST-1","TEST-2","TEST-3"`);
+  t.is((await readFile(jiraListFilePath)).toString(), `TEST-1,TEST-2,TEST-3`);
 });

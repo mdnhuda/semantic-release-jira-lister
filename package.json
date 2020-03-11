@@ -1,7 +1,7 @@
 {
   "name": "semantic-release-jira-lister",
   "description": "semantic-release plugin to create jira/ticket list file",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "ava": {
     "files": [
       "test/**/*.test.js"

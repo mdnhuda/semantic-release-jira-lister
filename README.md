@@ -14,6 +14,7 @@ The `jira-list` file's content would be `TEST-345,TEST-234,TEST-123`
 
 https://www.npmjs.com/package/semantic-release-jira-lister
 
+
 ---------
 
 | Step               | Description                                                                                                                                                                                           |

@@ -1,6 +1,15 @@
 # semantic-release-jira-lister
 
-[**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to create or update a changelog file.
+[**semantic-release**](https://github.com/semantic-release/semantic-release) plugin to create a file extracting the Jira ticket numbers from the commit messages.
+The expected commit message format:
+
+`TEST-123 Added new page`
+
+`[TEST-234] Added another page`
+
+`feat: [TEST-345] Added another page`
+
+The `jira-list` file's content would be `"TEST-123","TEST-234","TEST-345"`
 
 [![Travis](https://img.shields.io/travis/semantic-release/changelog.svg)](https://travis-ci.org/semantic-release/changelog)
 [![Codecov](https://img.shields.io/codecov/c/github/semantic-release/changelog.svg)](https://codecov.io/gh/semantic-release/changelog)

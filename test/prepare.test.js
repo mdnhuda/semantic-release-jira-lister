@@ -19,11 +19,12 @@ test('Create new jira-list file', async t => {
     {hash: '123', message: 'TEST-1 First commit'},
     {hash: '124', message: '[TEST-2] Second commit'},
     {hash: '125', message: 'TEST-2 Second commit 2'},
+    {hash: '234', message: 'B2B-201 business to business commit'},
     {hash: '456', message: 'feat: [TEST-3] new features'},
   ];
 
   await prepare({}, {cwd, commits, logger: t.context.logger});
 
   // Verify the content of the file created, only unique jira IDs will be kept
-  t.is((await readFile(jiraListFilePath)).toString(), `TEST-1,TEST-2,TEST-3`);
+  t.is((await readFile(jiraListFilePath)).toString(), `TEST-1,TEST-2,B2B-201,TEST-3`);
 });

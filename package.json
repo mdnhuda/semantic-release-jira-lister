@@ -56,7 +56,7 @@
     "semantic-release": ">=15.8.0 <18.0.0"
   },
   "prettier": {
-    "printWidth": 120,
+    "printWidth": 180,
     "trailingComma": "es5"
   },
   "publishConfig": {
